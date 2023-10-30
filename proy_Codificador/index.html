@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Proyecto encriptador - Alura</title>
+</head>
+<body>
+    <img src="./img/logo.png" alt="Logo" class="logo"> <br>
+
+    <div class="container__contenedor">
+    
+            <div class="container_encriptador_parte1">
+                <form action="">
+                    <input type="text" placeholder="Ingrese el texto aquí" id="input__msj" class="input__msj" name="input__msj" required autofocus onkeypress="return (event.charCode >= 97 && event.charCode <= 122)">
+                </form>
+        
+                <div class="subcontainer__info">
+                    <img src="./img/important.png" alt="">
+                    <p>Sólo letras minúsculas y sin acentos</p>
+                </div>
+        
+                <br>
+        
+                <div class="container_botones">
+                    <button class="boton_encriptar" onclick="encriptar()">Encriptar</button> <br>
+                    <button class="boton_2" onclick="procesarDesenscriptar()">Desencriptar</button>
+                </div>
+                
+            </div>
+    
+            <div class="container__msjEncriptado">
+                <img src="./img/muñeco.png" alt="Muñeco mensaje no encontrado" class="img_muñeco">
+                <input type="text" id="mostrar_texto" name="mostrar_texto" class="input__msj">
+                <p class="ingresa_texto">Ingresa el texto que desees encriptar o desencriptar</p>
+                <button class="boton_2" onclick="copiarAlPortapapeles()">Copiar</button>
+            </div>
+        </div>
+
+    <footer>
+        <p>Encriptador desarrollado por Ivan Daniel Manrique Roa</p>
+    </footer>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
